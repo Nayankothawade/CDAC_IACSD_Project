@@ -1,0 +1,87 @@
+Today's Agenda & Workflow:
+
+>Create a local repository.
+>Create a remote repository.
+>Try to define the actual scope.
+>Prepare use cases and mention actors.
+>try to generate entities and parameters for different actors.
+>Make planning for next day workflow.
+
+Actors:
+
+Students: The primary users of the Techinspire Academy platform who will access and utilize the various educational resources and courses offered by the platform.
+Instructors: The individuals responsible for creating and managing the courses offered on the platform, as well as providing support to students.
+Administrators: The individuals responsible for managing the overall operation and functionality of the Techinspire Academy platform.
+
+Use cases:
+
+Register for an account: Students and instructors will be able to register for an account on the Techinspire Academy platform in order to access the various features and resources.
+Browse available courses: Students will be able to search and browse through the available courses on the platform to find courses that meet their educational needs.
+Enroll in courses: Once students have found a course they would like to take, they can enroll in the course and gain access to the course materials and resources.
+Complete courses: Students will be able to progress through the course materials and complete assignments and assessments to earn a certificate of completion.
+Create and manage courses: Instructors will be able to create and manage the courses offered on the platform, including uploading course materials and setting assignments and assessments.
+Manage student progress: Instructors will be able to monitor and manage the progress of their students, including viewing grades and providing feedback.
+Manage platform functionality: Administrators will be responsible for managing the overall functionality of the Techinspire Academy platform, including monitoring server performance and
+ensuring that the platform is secure and up-to-date.
+
+Scope:
+
+The scope of the Techinspire Academy project includes the development of a web-based educational platform that allows students to browse and enroll in courses, complete course materials
+and assignments and earn certificates of completion. Instructors will be able to create and manage courses on the platform and monitor student progress, while administrators will be 
+responsible for ensuring the overall functionality and security of the platform. The project will be developed using Java and will utilize various web development technologies, such as
+HTML, CSS, and JavaScript, as well as a backend database system to store course materials and student progress. The platform will initially offer a limited number of courses in a specific
+field, with the potential for expansion and growth over time.
+
+The Techinspire Academy project is a software platform designed for online learning. The platform provides courses on various topics and allows students to enroll and access course
+materials. Instructors are responsible for creating and managing the courses, and students can track their progress and receive feedback on their performance.
+
+The system architecture of Techinspire Academy may involve the following components:
+
+A database to store all the data related to the courses, students, and instructors, as well as their relationships and progress tracking information.
+
+An application layer that includes the various modules and functionalities required for the platform, such as user registration and login, course enrollment, course material access, and
+progress tracking.
+
+A presentation layer that provides the user interface for the platform, including the web pages and graphics.
+
+The following entities can be defined to store the required data in the database:
+
+Students Entity:
+student_id (primary key)
+first_name
+last_name
+email
+phone_number
+enrollment_status
+
+Instructors Entity:
+instructor_id (primary key)
+first_name
+last_name
+email
+course_id (foreign key)
+
+Courses Entity:
+course_id (primary key)
+course_name
+course_description
+prerequisites
+
+Course Materials Entity:
+material_id (primary key)
+material_name
+material_type
+course_id (foreign key)
+
+Progress Tracking Entity:
+progress_id (primary key)
+student_id (foreign key)
+course_id (foreign key)
+grade
+completion_status
+time_spent
+
+These entities represent the basic information needed to track and manage the courses, students, instructors, and progress on the Techinspire Academy platform.
+
+The application layer can be built using a programming language such as Java, with a web framework such as Spring Boot for efficient development. The presentation layer can be designed
+using HTML, CSS, and JavaScript. The database can be implemented using a database management system such as MySQL.
