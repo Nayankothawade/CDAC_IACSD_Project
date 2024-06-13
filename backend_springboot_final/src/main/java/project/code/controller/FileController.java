@@ -92,7 +92,7 @@ public class FileController {
 	@GetMapping("/teacherfile/{id}")
 	public ResponseEntity<List<ResponseFile>> getteacherfile(@PathVariable int id) {
 		
-		List<ResponseFile> files = dao.getteacherfile(id).map(dbFile -> {
+		List<ResponseFile> files = dao.map(dbFile -> {
 			String fileDownloadUri = ServletUriComponentsBuilder
 					.fromCurrentContextPath()
 					.path("/files/")
